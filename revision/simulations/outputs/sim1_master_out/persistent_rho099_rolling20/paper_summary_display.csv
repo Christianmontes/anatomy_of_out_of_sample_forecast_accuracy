@@ -1,0 +1,4 @@
+scenario,model,N,important_insample,harmful_oos,paradox,paradox_ge10,full_beats_baseline,drop_improves,median_gpbsv_x2,median_improve_pct,x3_near0,x4_near0,enet_alpha
+persistent_rho099_rolling20,OLS,25,1/25 (4%),25/25 (100%),1/25 (4%),0/25 (0%),25/25 (100%),25/25 (100%),+0.157,+12.1%,5%,0%,
+persistent_rho099_rolling20,ENET,25,5/25 (20%),24/25 (96%),4/25 (16%),0/25 (0%),25/25 (100%),25/25 (100%),+0.076,+7.0%,15%,10%,"0.0924 [0.0001,0.1]"
+persistent_rho099_rolling20,RF,25,3/25 (12%),6/25 (24%),0/25 (0%),0/25 (0%),25/25 (100%),25/25 (100%),+0.007,+2.0%,45%,65%,

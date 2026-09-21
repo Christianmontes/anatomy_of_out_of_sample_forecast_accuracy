@@ -1,0 +1,4 @@
+scenario,model,n_seeds,p_important_insample,p_harmful_oos,p_paradox,p_paradox_large_gain,p_full_beats_baseline,p_drop_improves,median_gpbsv_x2,median_improve_pct,p_x3_near_zero,p_x4_near_zero,enet_alpha_mean,enet_alpha_min,enet_alpha_max
+proxy_break_reverse_noisyx1_expanding,ols,25,0.96,1.0,0.96,0.96,0.96,1.0,0.3941305001242874,21.79617906909522,0.88,0.76,,,
+proxy_break_reverse_noisyx1_expanding,enet,25,1.0,1.0,1.0,1.0,0.96,1.0,0.3587632202075868,21.23281803639337,0.92,0.84,0.070804,0.0001,0.1
+proxy_break_reverse_noisyx1_expanding,rf,25,1.0,0.88,0.88,0.6,1.0,0.88,0.24976263552647204,12.117208337159429,0.72,0.6,,,

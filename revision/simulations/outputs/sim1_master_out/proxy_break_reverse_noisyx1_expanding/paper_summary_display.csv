@@ -1,0 +1,4 @@
+scenario,model,N,important_insample,harmful_oos,paradox,paradox_ge10,full_beats_baseline,drop_improves,median_gpbsv_x2,median_improve_pct,x3_near0,x4_near0,enet_alpha
+proxy_break_reverse_noisyx1_expanding,OLS,25,24/25 (96%),25/25 (100%),24/25 (96%),24/25 (96%),24/25 (96%),25/25 (100%),+0.394,+21.8%,88%,76%,
+proxy_break_reverse_noisyx1_expanding,ENET,25,25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),24/25 (96%),25/25 (100%),+0.359,+21.2%,92%,84%,"0.0708 [0.0001,0.1]"
+proxy_break_reverse_noisyx1_expanding,RF,25,25/25 (100%),22/25 (88%),22/25 (88%),15/25 (60%),25/25 (100%),22/25 (88%),+0.250,+12.1%,72%,60%,

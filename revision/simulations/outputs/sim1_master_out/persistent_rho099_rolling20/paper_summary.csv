@@ -1,0 +1,4 @@
+scenario,model,n_seeds,p_important_insample,p_harmful_oos,p_paradox,p_paradox_large_gain,p_full_beats_baseline,p_drop_improves,median_gpbsv_x2,median_improve_pct,p_x3_near_zero,p_x4_near_zero,enet_alpha_mean,enet_alpha_min,enet_alpha_max
+persistent_rho099_rolling20,ols,25,0.04,1.0,0.04,0.0,1.0,1.0,0.15689814642500474,12.098366690729366,0.05,0.0,,,
+persistent_rho099_rolling20,enet,25,0.2,0.96,0.16,0.0,1.0,1.0,0.07628668312312326,7.0317261893168626,0.15,0.1,0.09240400000000001,0.0001,0.1
+persistent_rho099_rolling20,rf,25,0.12,0.24,0.0,0.0,1.0,1.0,0.0065595308278348155,2.0419247156230007,0.45,0.65,,,

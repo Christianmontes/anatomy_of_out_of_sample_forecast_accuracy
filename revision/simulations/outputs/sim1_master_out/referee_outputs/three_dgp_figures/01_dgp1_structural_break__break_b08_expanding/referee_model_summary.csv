@@ -1,0 +1,4 @@
+dgp_label,source_dir,scenario,model,n_seeds,mse_full_mean,mse_drop_mean,improve_pct_mean,rmse_full_mean,mas_mean,mas_std,mas_median,mas_sig_10,mas_sig_05,mas_sig_01
+dgp1_structural_break,revision\simulations\outputs\sim1_master_out\break_b08_expanding,break_b08_expanding,enet,25,1.3802005190956068,1.0575547756107448,23.161412643933723,1.1735016930382738,0.10173533359546406,0.2814236575944224,0.019871982016360645,0.0,0.0,0.0
+dgp1_structural_break,revision\simulations\outputs\sim1_master_out\break_b08_expanding,break_b08_expanding,ols,25,1.4180769754094475,1.0584858318500996,25.065002893352947,1.189084250507341,0.07892354806998403,0.2867435318625197,-0.0564500823605596,0.0,0.0,0.0
+dgp1_structural_break,revision\simulations\outputs\sim1_master_out\break_b08_expanding,break_b08_expanding,rf,25,1.4254016604156499,1.177590465594272,17.02256008432219,1.1920310567673145,0.1616831907255424,0.2834109389934528,0.2064797119118712,0.0,0.0,0.0

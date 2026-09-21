@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Monte Carlo summary (break_b08_expanding)}
+\label{tab:break_b08_expanding}
+\begin{tabular}{lccccccc}
+\toprule
+model & important_insample &    harmful_oos &        paradox &   paradox_ge10 & median_gpbsv_x2 & median_improve_pct & full_beats_baseline \\
+\midrule
+  OLS &      25/25 (100\%) &  25/25 (100\%) &  25/25 (100\%) &  25/25 (100\%) &          +0.371 &            +26.7\% &       25/25 (100\%) \\
+ ENET &      25/25 (100\%) &  25/25 (100\%) &  25/25 (100\%) &  25/25 (100\%) &          +0.333 &            +22.9\% &       25/25 (100\%) \\
+   RF &      25/25 (100\%) &   24/25 (96\%) &   24/25 (96\%) &   21/25 (84\%) &          +0.296 &            +16.9\% &       25/25 (100\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

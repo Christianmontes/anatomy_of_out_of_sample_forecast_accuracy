@@ -1,0 +1,9 @@
+horizon,period,model,n_rows,max_abs_diff,pass
+1,0,rf_cv,1,0.0,True
+1,0,xgb_cv,1,0.0,True
+1,0,nn_comb,1,0.0,True
+1,0,enet,1,0.0,True
+1,0,pca,1,0.0,True
+1,0,lin_comb,1,0.0,True
+1,0,nonlin_comb,1,6.098637220230962e-20,True
+1,0,all_comb,1,8.673617379884035e-19,True

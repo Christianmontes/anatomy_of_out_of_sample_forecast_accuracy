@@ -1,0 +1,4 @@
+scenario,model,N,important_insample,harmful_oos,paradox,paradox_ge10,full_beats_baseline,drop_improves,median_gpbsv_x2,median_improve_pct,x3_near0,x4_near0,enet_alpha
+break_b08_expanding,OLS,25,25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),+0.371,+26.7%,90%,95%,
+break_b08_expanding,ENET,25,25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),25/25 (100%),+0.333,+22.9%,95%,95%,"0.03923 [0.0001,0.1]"
+break_b08_expanding,RF,25,25/25 (100%),24/25 (96%),24/25 (96%),21/25 (84%),25/25 (100%),24/25 (96%),+0.296,+16.9%,95%,85%,

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper (preferred-citation) and, if relevant, the package itself."
+type: software
+title: "Replication package for: The Anatomy of Out-of-Sample Forecasting Accuracy: A Shapley-Based Approach"
+version: 1.0.0
+date-released: 2026-09-21
+license: MIT
+repository-code: "https://github.com/Christianmontes/anatomy_of_out_of_sample_forecast_accuracy"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22877061
+    description: "Zenodo archive of the raw fitted models and Shapley intermediates (heavy inputs for Tiers 2 and 3)"
+authors:
+  - family-names: Borup
+    given-names: Daniel
+  - family-names: Goulet Coulombe
+    given-names: Philippe
+  - family-names: Rapach
+    given-names: David E.
+  - family-names: Montes Schütte
+    given-names: Erik Christian
+    email: christianms@econ.au.dk
+    affiliation: "Aarhus University"
+  - family-names: Schwenk-Nebbe
+    given-names: Sander
+keywords:
+  - Shapley values
+  - performance-based Shapley value
+  - forecasting
+  - inflation
+  - machine learning
+  - variable importance
+  - replication
+preferred-citation:
+  type: article
+  title: "The Anatomy of Out-of-Sample Forecasting Accuracy: A Shapley-Based Approach"
+  journal: "Journal of Applied Econometrics"
+  year: 2026
+  status: in-press
+  authors:
+    - family-names: Borup
+      given-names: Daniel
+    - family-names: Goulet Coulombe
+      given-names: Philippe
+    - family-names: Rapach
+      given-names: David E.
+    - family-names: Montes Schütte
+      given-names: Erik Christian
+    - family-names: Schwenk-Nebbe
+      given-names: Sander

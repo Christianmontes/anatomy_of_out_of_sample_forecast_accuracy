@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "anatomy-replication"
+version = "1.0.0"
+description = "Replication package: The Anatomy of Out-of-Sample Forecasting Accuracy: A Shapley-Based Approach (Journal of Applied Econometrics)"
+authors = ["Erik Christian Montes Schütte <christianms@econ.au.dk>", "Daniel Borup", "Philippe Goulet Coulombe", "David E. Rapach", "Sander Schwenk-Nebbe"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+# --- core (Tiers 0-1 + simulations) — pins from New\Replication\requirements_iml39.txt ---
+numpy = "1.22.0"
+pandas = "1.1.5"
+scipy = "1.10.0"
+scikit-learn = "0.24.1"
+statsmodels = "0.14.0"
+xgboost = "1.3.3"
+joblib = "1.2.0"
+tqdm = "4.64.1"
+matplotlib = "3.6.3"
+seaborn = "0.12.2"
+openpyxl = "3.1.0"
+xlrd = "1.2.0"        # xlrd>=2.0 dropped .xlsx support; 1.2.x is needed for create_tables.py reads under pandas 1.1.5
+# the authors' package, from local source (v0.1.6)
+anatomy = { path = "packages/anatomy", develop = false }
+
+# --- Tier-2 (Shapley/GPBSV recompute) deps are intentionally NOT declared here ---
+# tensorflow 2.5.0 pins numpy<1.20, which conflicts with the recorded numpy 1.22.0; the original
+# env only coexisted because pip didn't enforce that bound. Poetry's resolver does, so installing
+# TF here would make the lock unsolvable. For Tier 2, add them into the venv directly (matches the
+# original env, pip just warns about the numpy bound):
+#   poetry run pip install "tensorflow==2.5.0" "shap==0.42.1"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"

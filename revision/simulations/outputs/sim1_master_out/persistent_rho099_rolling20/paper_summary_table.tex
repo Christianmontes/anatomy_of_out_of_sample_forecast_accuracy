@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Monte Carlo summary (persistent_rho099_rolling20)}
+\label{tab:persistent_rho099_rolling20}
+\begin{tabular}{lccccccc}
+\toprule
+model & important_insample &    harmful_oos &      paradox & paradox_ge10 & median_gpbsv_x2 & median_improve_pct & full_beats_baseline \\
+\midrule
+  OLS &         1/25 (4\%) &  25/25 (100\%) &   1/25 (4\%) &   0/25 (0\%) &          +0.157 &            +12.1\% &       25/25 (100\%) \\
+ ENET &        5/25 (20\%) &   24/25 (96\%) &  4/25 (16\%) &   0/25 (0\%) &          +0.076 &             +7.0\% &       25/25 (100\%) \\
+   RF &        3/25 (12\%) &    6/25 (24\%) &   0/25 (0\%) &   0/25 (0\%) &          +0.007 &             +2.0\% &       25/25 (100\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

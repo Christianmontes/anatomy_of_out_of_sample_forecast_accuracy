@@ -1,0 +1,34 @@
+{
+  "output_root": "E:\\au\\anatomy_replication\\revision\\simulations\\outputs\\sim1_master_out\\referee_outputs\\three_dgp_figures",
+  "models": [
+    "ols",
+    "enet",
+    "rf"
+  ],
+  "dgps": [
+    {
+      "order": 1,
+      "label": "dgp1_structural_break",
+      "source_dir": "E:\\au\\anatomy_replication\\revision\\simulations\\outputs\\sim1_master_out\\break_b08_expanding",
+      "note": "Headline structural-break DGP.",
+      "scenario": "break_b08_expanding",
+      "output_folder": "01_dgp1_structural_break__break_b08_expanding"
+    },
+    {
+      "order": 2,
+      "label": "dgp2_persistent_noise",
+      "source_dir": "E:\\au\\anatomy_replication\\revision\\simulations\\outputs\\sim1_master_out\\persistent_rho099_rolling20",
+      "note": "Persistent-noise / spurious-predictor DGP.",
+      "scenario": "persistent_rho099_rolling20",
+      "output_folder": "02_dgp2_persistent_noise__persistent_rho099_rolling20"
+    },
+    {
+      "order": 3,
+      "label": "dgp3_proxy_break",
+      "source_dir": "E:\\au\\anatomy_replication\\revision\\simulations\\outputs\\sim1_master_out\\proxy_break_reverse_noisyx1_expanding",
+      "note": "Proxy-break DGP: stale proxy reverses after the break.",
+      "scenario": "proxy_break_reverse_noisyx1_expanding",
+      "output_folder": "03_dgp3_proxy_break__proxy_break_reverse_noisyx1_expanding"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# All text files are stored and checked out with LF line endings on every platform, so that
+# MANIFEST_sha256.txt (computed on LF bytes) verifies on Windows, macOS and Linux alike.
+* text=auto eol=lf
+
+# Binary types (never normalize, no text diffs)
+*.bin    binary
+*.pickle binary
+*.7z     binary
+*.zip    binary
+*.pdf    binary
+*.png    binary
+*.jpg    binary
+*.xlsx   binary
+*.xls    binary
+*.npy    binary
