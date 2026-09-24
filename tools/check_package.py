@@ -185,9 +185,10 @@ def main():
             bodies = subprocess.check_output(["git", "-C", PKG, "log", "--format=%B"], text=True).lower()
             ident = sorted(set(a for a in authors if a.strip()))
             trailers = [l for l in bodies.splitlines() if "co-authored-by" in l or "anthropic" in l or "claude" in l]
-            rep.item(len(ident) == 1 and not trailers and "anthropic" not in " ".join(ident).lower(), "git",
-                     "one identity in the history: %s; no attribution trailers" % ident if len(ident) == 1 and not trailers
-                     else "identities %s; trailer lines %s" % (ident, trailers[:5]))
+            bots = [i for i in ident if re.search(r"anthropic|claude|copilot|\[bot\]|openai|gemini", i, re.I)]
+            rep.item(not bots and not trailers, "git",
+                     "no AI or bot identity in the history and no attribution trailers; identities: %s" % ident
+                     if not bots and not trailers else "AI/bot identities %s; trailer lines %s" % (bots, trailers[:5]))
         except Exception as e:  # git not available
             rep.info("git", "could not read the git history (%s)" % e)
     else:
