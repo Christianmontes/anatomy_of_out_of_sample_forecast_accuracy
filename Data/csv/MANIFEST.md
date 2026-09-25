@@ -9,6 +9,6 @@ precision). `tools/export_data_csv.py --check` verifies that they are identical 
 |---|---|---|---|
 | `fred_md_raw_2024-10-05.csv` | 788 x 126 | FRED-MD monthly panel, 1959-01 to 2024-08, raw levels as downloaded (`data.py: get_fred_md_raw`) | McCracken and Ng (2016), Federal Reserve Bank of St. Louis |
 | `fred_md_transformed_2024-10-05.csv` | 788 x 126 | the same panel after the McCracken-Ng transformation codes (`data.py: get_fred_md`) | as above |
-| `soc_2024-10-05.csv` | 884 x 3 | Michigan Surveys of Consumers indices `soc_ics`, `soc_ice`, `soc_icc`, 1951-02 to 2024-09 (`data.py: get_soc`) | Surveys of Consumers, University of Michigan (copyright The Regents of the University of Michigan) |
+| `soc_2024-10-05.csv` | 884 x 3 | Michigan Surveys of Consumers indices `soc_ics`, `soc_ice`, `soc_icc`, 1951-02 to 2024-09 (`data.py: get_soc`) | Surveys of Consumers, Survey Research Center, University of Michigan; copyright The Regents of the University of Michigan; source: sca.isr.umich.edu, retrieved 2024-10-05 |
 
 Column names are the FRED-MD mnemonics in lower case (Internet Appendix Table A.1). Missing values are empty fields.

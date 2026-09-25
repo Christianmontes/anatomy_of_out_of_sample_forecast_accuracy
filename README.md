@@ -3,7 +3,7 @@
 Daniel Borup, Philippe Goulet Coulombe, David E. Rapach, Erik Christian Montes Schütte, Sander Schwenk-Nebbe.
 *Journal of Applied Econometrics*, forthcoming (manuscript MS 16257).
 
-Package version 1.0.0, assembled September 2026. Maintainer: Erik Christian Montes Schütte, Aarhus University,
+Package version 1.0.1, assembled September 2026. Maintainer: Erik Christian Montes Schütte, Aarhus University,
 christianms@econ.au.dk. Corresponding author of the paper: David E. Rapach, dave.rapach@gmail.com.
 
 This package reproduces every table and figure of the paper and its Internet Appendix from the saved
@@ -86,7 +86,7 @@ loaders that exist in `data.py` but are not used by the paper).
 | Dataset | Role | Source and license | In this package |
 |---|---|---|---|
 | FRED-MD, vintage downloaded 2024-10-05 (126 columns; 117 series used as predictors, CPI-U all items `cpiaucsl` is the target) | predictors and target | McCracken and Ng (2016), Federal Reserve Bank of St. Louis, https://research.stlouisfed.org/econ/mccracken/fred-databases/. Public. The historical monthly vintage files are the reference; the "current" download link used by `data.py` no longer serves this vintage | `Code/V002/_cache/get_fred_md_raw.bin` (raw), `get_fred_md.bin` (transformed); plain-text copies `Data/csv/fred_md_raw_2024-10-05.csv`, `Data/csv/fred_md_transformed_2024-10-05.csv` |
-| University of Michigan Surveys of Consumers: index of consumer sentiment (`soc_ics`), index of consumer expectations (`soc_ice`), index of current economic conditions (`soc_icc`), retrieved 2024-10-05 from the public tables `tbmics.csv` and `tbmiccice.csv` | three predictors | Surveys of Consumers, University of Michigan; copyright The Regents of the University of Michigan; https://data.sca.isr.umich.edu (free download, no registration). The usage agreement restricts redistribution of the data; the three aggregate index series are included here only as a small archival copy so that the exact input vintage can be verified, with attribution; the Surveys of Consumers (umich.soc@umich.edu) inspected this archival copy and confirmed in September 2026 that its inclusion is acceptable. A fresh download of the public tables reproduces the series up to historical revisions, since the tables are living files | `Code/V002/_cache/get_soc.bin`; plain-text copy `Data/csv/soc_2024-10-05.csv` |
+| University of Michigan Surveys of Consumers: index of consumer sentiment (`soc_ics`), index of consumer expectations (`soc_ice`), index of current economic conditions (`soc_icc`), retrieved 2024-10-05 from the public tables `tbmics.csv` and `tbmiccice.csv` | three predictors | Surveys of Consumers, Survey Research Center, University of Michigan; copyright The Regents of the University of Michigan; source: sca.isr.umich.edu, retrieved 2024-10-05 (https://data.sca.isr.umich.edu, free download, no registration). The usage agreement restricts redistribution of the data; the three aggregate index series are included here only as a small archival copy so that the exact input vintage can be verified, with attribution; the Surveys of Consumers (umich.soc@umich.edu) inspected this archival copy and confirmed in September 2026 that its inclusion with this attribution is acceptable. A fresh download of the public tables reproduces the series up to historical revisions, since the tables are living files | `Code/V002/_cache/get_soc.bin`; plain-text copy `Data/csv/soc_2024-10-05.csv` |
 | `Data/Variable_list_CPI.xlsx` | variable names and groups used in tables and figures | authors' own metadata | yes |
 
 `tools/export_data_csv.py --check` verifies that the CSV copies are identical to the pickled caches. Internet
@@ -235,8 +235,8 @@ contains the estimation machine's storage paths (`/FAST_STORE/IML_MODELS`), left
 
 Code: MIT License (`LICENSE`); the `anatomy` package carries its own MIT license (copyright Sander Schwenk-Nebbe).
 Data: FRED-MD is public (Federal Reserve Bank of St. Louis); the Michigan Surveys of Consumers series are
-redistributed here as a small archival copy for replication purposes with attribution to the Surveys of Consumers,
-University of Michigan (copyright The Regents of the University of Michigan).
+redistributed here as a small archival copy for replication purposes with the attribution requested by the source:
+Surveys of Consumers, Survey Research Center, University of Michigan; copyright The Regents of the University of Michigan; source: sca.isr.umich.edu, retrieved 2024-10-05.
 
 Please cite the paper (see `CITATION.cff`):
 Borup, D., Goulet Coulombe, P., Rapach, D. E., Montes Schütte, E. C., and Schwenk-Nebbe, S. (forthcoming).
