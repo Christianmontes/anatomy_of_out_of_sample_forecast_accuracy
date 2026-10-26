@@ -31,3 +31,6 @@ revision/mas_referee_response/outputs/insample_gpbsv_v5/MAS_h*_FINISHED.txt
 revision/mas_referee_response/outputs/insample_gpbsv_v5/pipeline_DONE.txt
 revision/mas_referee_response/outputs/insample_gpbsv_v5/pipeline.lock
 revision/mas_referee_response/outputs/insample_gpbsv_v5/.pushed_*
+
+# Local submitted manuscripts and cover letters; keep out of the public repository
+/Paper/

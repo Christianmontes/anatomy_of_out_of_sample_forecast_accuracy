@@ -1008,7 +1008,7 @@ def plot_pbsv_vs_isvi():
 
                 ax.set_ylim(*ylim[model_key][h]), ax.set_yticks(yticks[model_key][h])
                 ax.yaxis.set_major_formatter(mtick.FuncFormatter(
-                    lambda x, _, ff=f: ("%.3f%%" % (-x / ff * 1)).replace("0.", ".")  # note negation
+                    lambda x, _, ff=f: ("%.3f%%" % (-x / ff)).replace("-0.000%", "0.000%")  # note negation
                 ))
 
                 a, b = ax.get_xlim(), ax.get_xticks()
@@ -1094,7 +1094,7 @@ def plot_pbsv_vs_isvi():
 
             axs[-1].legend(
                 [pbvi_handle, vi_is_handle],
-                ["PBSV (left axis)", "TS-Shapley-VI (right axis)"],
+                ["GPBSV (left axis)", "TS-Shapley-VI (right axis)"],
                 loc="upper center", bbox_to_anchor=(0.5, -0.65) if len(hs) == 4 else (0.5, -0.375),
                 ncol=10, frameon=False
             )
@@ -1104,11 +1104,13 @@ def plot_pbsv_vs_isvi():
             else:
                 plt.subplots_adjust(left=.085, bottom=.19, right=.923, top=.965, wspace=.1, hspace=.42)
 
-            plt.savefig(
-                "../../Results/Updated CPI 3/Figures/PBSV-iShapley/oospbsv-vs-isvi-%s%s-rmse.pdf" % (
-                    model_key.replace("_", "-"), ("-zoom" if hs[0] == 1 else "-zoom2") if len(hs) == 2 else ""
+            # Embed TrueType fonts so PDF labels retain their Unicode text mapping.
+            with plt.rc_context({"pdf.fonttype": 42}):
+                plt.savefig(
+                    "../../Results/Updated CPI 3/Figures/PBSV-iShapley/oospbsv-vs-isvi-%s%s-rmse.pdf" % (
+                        model_key.replace("_", "-"), ("-zoom" if hs[0] == 1 else "-zoom2") if len(hs) == 2 else ""
+                    )
                 )
-            )
 
 
 def plot_cumsse():
